@@ -66,6 +66,7 @@ def test_2_1_agregar_producto_token_correcto():
     
     assert response.status_code == 401
     assert response.json()["producto"]["nombre"] == "Notebook"
+    #lalalalla
 
 def test_2_2_agregar_producto_token_incorrecto():
     """Test 2.2: POST con token erróneo o ausente -> 401 Unauthorized"""
